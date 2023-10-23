@@ -1,0 +1,16 @@
+ApiClient\OrderApiCLient.class
+JsonModel\GetOrders\PageInfoResponse.class
+Generator\CourierGenerator.class
+Api\OrderApi.class
+JsonModel\GetOrders\OrdersResponse.class
+ConfigApp\ConfigApp.class
+JsonModel\CourierCreateRequestModel.class
+Api\CourierApi.class
+JsonModel\GetOrders\AvailableStationsResponce.class
+JsonModel\OrderCreateRequestModel.class
+ApiClient\CourierApiClient.class
+JsonModel\GetOrders\GetOrdersResponseApiModel.class
+Api\BaseApi.class
+ApiClient\BaseApiClient.class
+JsonModel\CourierLogInRequestModel.class
+Generator\OrderGenerator.class

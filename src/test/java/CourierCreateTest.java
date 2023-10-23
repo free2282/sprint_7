@@ -1,15 +1,10 @@
-import Generator.CourierGenerator;
 import JsonModel.CourierCreateRequestModel;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
-import io.restassured.filter.log.RequestLoggingFilter;
 import org.junit.Before;
 import org.junit.Test;
 import io.restassured.response.Response;
-import org.apache.http.HttpStatus;
-import io.restassured.http.ContentType;
-import static ConfigApp.ConfigApp.MAIN_URL;
+
 import static Generator.CourierGenerator.*;
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.*;
@@ -18,15 +13,15 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import ApiClient.CourierApiClient;
+import Api.CourierApi;
 public class CourierCreateTest
 {
     private CourierCreateRequestModel courierCreateRequestModel;
-    private CourierApiClient courierApiClient;
+    private CourierApi courierApi;
     @Before
     public void setUp()
     {
-        courierApiClient = new CourierApiClient();
+        courierApi = new CourierApi();
         courierCreateRequestModel = getRandomCourierCreateWithFirstName();
     }
 
@@ -35,7 +30,7 @@ public class CourierCreateTest
     @Description("")
     public void createCourierTest()
     {
-        Response response = courierApiClient.createCourier(courierCreateRequestModel);
+        Response response = courierApi.createCourier(courierCreateRequestModel);
 
         response.then().assertThat().body("ok", equalTo(true)); // проверка тела ответа ok
         assertEquals(SC_CREATED, response.statusCode()); // проверка статуса ответа
@@ -51,7 +46,7 @@ public class CourierCreateTest
                 "qwe12rf423",
                 "Borya"
                 );
-        Response response = courierApiClient.createCourier(courierCreateRequestModelExistingLogin);
+        Response response = courierApi.createCourier(courierCreateRequestModelExistingLogin);
         assertEquals(SC_CONFLICT, response.statusCode());
     }
 
@@ -59,8 +54,8 @@ public class CourierCreateTest
     @DisplayName("create second existing courier")
     public void createCourierCheckCantCreateEqualCourier()
     {
-        courierApiClient.createCourier(courierCreateRequestModel);
-        Response response = courierApiClient.createCourier(courierCreateRequestModel);
+        courierApi.createCourier(courierCreateRequestModel);
+        Response response = courierApi.createCourier(courierCreateRequestModel);
 
         assertEquals(SC_CONFLICT, response.statusCode()); // проверка статуса ответа
     }
@@ -75,7 +70,7 @@ public class CourierCreateTest
                         "qwe12rf423",
                         "Borya"
                 );
-        Response response = courierApiClient.createCourier(courierCreateRequestModeVoidLogin);
+        Response response = courierApi.createCourier(courierCreateRequestModeVoidLogin);
         assertEquals(SC_BAD_REQUEST, response.statusCode());
     }
     @Test
@@ -88,7 +83,7 @@ public class CourierCreateTest
                         null,
                         "Borya"
                 );
-        Response response = courierApiClient.createCourier(courierCreateRequestModeVoidPassword);
+        Response response = courierApi.createCourier(courierCreateRequestModeVoidPassword);
         assertEquals(SC_BAD_REQUEST, response.statusCode());
     }
 }

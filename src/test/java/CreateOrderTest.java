@@ -1,8 +1,7 @@
-import ApiClient.OrderApiCLient;
+import Api.OrderApi;
 import JsonModel.OrderCreateRequestModel;
 
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Before;
@@ -21,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 public class CreateOrderTest
 {
     private OrderCreateRequestModel orderCreateRequestModel;
-    private OrderApiCLient orderApiCLient;
+    private OrderApi orderApi;
     private final String[] color;
 
 
@@ -50,7 +49,7 @@ public class CreateOrderTest
     @Before
     public void setUp()
     {
-        orderApiCLient = new OrderApiCLient();
+        orderApi = new OrderApi();
         orderCreateRequestModel = getRandomCourierCreateWithFirstName();
     }
     @Test
@@ -59,7 +58,7 @@ public class CreateOrderTest
     public void orderCreteTest()
     {
         orderCreateRequestModel.setColor(color);
-        Response response = orderApiCLient.createOrder(orderCreateRequestModel);
+        Response response = orderApi.createOrder(orderCreateRequestModel);
 
         response.then().assertThat().body("track", notNullValue());
         assertEquals(SC_CREATED, response.statusCode());

@@ -1,1 +1,2 @@
-# sprint_7
+"mvn clean test"
+"mvn allure:serve"

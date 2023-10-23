@@ -1,4 +1,4 @@
-import ApiClient.CourierApiClient;
+import Api.CourierApi;
 import JsonModel.CourierCreateRequestModel;
 import JsonModel.CourierLogInRequestModel;
 import io.qameta.allure.Description;
@@ -18,15 +18,15 @@ public class CourierLogInTest
 {
     private CourierCreateRequestModel courierCreateRequestModel;
     private CourierLogInRequestModel courierLogInRequestModel;
-    private CourierApiClient courierApiClient;
+    private CourierApi courierApi;
 
     @Before
     public void setUp()
     {
-        courierApiClient = new CourierApiClient();
+        courierApi = new CourierApi();
         courierCreateRequestModel = getRandomCourierCreateWithoutFirstName();
 
-        courierApiClient.createCourier(courierCreateRequestModel);
+        courierApi.createCourier(courierCreateRequestModel);
     }
     @Test
     @DisplayName("login courier with expecting 200 status code test")
@@ -34,7 +34,7 @@ public class CourierLogInTest
     public void logInCourierExpected200Test()
     {
         courierLogInRequestModel = new CourierLogInRequestModel(courierCreateRequestModel.getLogin(), courierCreateRequestModel.getPassword());
-        Response response = courierApiClient.loginCourier(courierLogInRequestModel);
+        Response response = courierApi.loginCourier(courierLogInRequestModel);
 
         assertEquals(SC_OK, response.getStatusCode());
         response.then().assertThat().body("id", notNullValue());
@@ -46,7 +46,7 @@ public class CourierLogInTest
     public void logInCourierNullLoginExpected400Test()
     {
         courierLogInRequestModel = new CourierLogInRequestModel(null, courierCreateRequestModel.getPassword());
-        Response response = courierApiClient.loginCourier(courierLogInRequestModel);
+        Response response = courierApi.loginCourier(courierLogInRequestModel);
 
         assertEquals(SC_BAD_REQUEST, response.getStatusCode());
     }
@@ -57,7 +57,7 @@ public class CourierLogInTest
     public void logInCourierNullPasswordExpected400Test() // в реальности тк падает, 500 оошибка
     {
         courierLogInRequestModel = new CourierLogInRequestModel(courierCreateRequestModel.getLogin(), null);
-        Response response = courierApiClient.loginCourier(courierLogInRequestModel);
+        Response response = courierApi.loginCourier(courierLogInRequestModel);
 
         assertEquals(SC_BAD_REQUEST, response.getStatusCode());
     }
@@ -68,7 +68,7 @@ public class CourierLogInTest
     public void logInCourierInvalidLoginExpected404Test()
     {
         courierLogInRequestModel = new CourierLogInRequestModel(courierCreateRequestModel.getLogin() + "fvrwefgvergv", courierCreateRequestModel.getPassword());
-        Response response = courierApiClient.loginCourier(courierLogInRequestModel);
+        Response response = courierApi.loginCourier(courierLogInRequestModel);
 
         assertEquals(SC_NOT_FOUND, response.getStatusCode());
     }
@@ -78,7 +78,7 @@ public class CourierLogInTest
     public void logInCourierInvalidPasswordExpected404Test()
     {
         courierLogInRequestModel = new CourierLogInRequestModel(courierCreateRequestModel.getLogin(), courierCreateRequestModel.getPassword() + "wqerqwefwefweef");
-        Response response = courierApiClient.loginCourier(courierLogInRequestModel);
+        Response response = courierApi.loginCourier(courierLogInRequestModel);
 
         assertEquals(SC_NOT_FOUND, response.getStatusCode());
     }
