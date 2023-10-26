@@ -1,4 +1,4 @@
-import JsonModel.CourierCreateRequestModel;
+import Model.Courier.Post.CourierCreateRequestModel;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;

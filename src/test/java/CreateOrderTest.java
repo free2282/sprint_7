@@ -1,5 +1,5 @@
 import Api.OrderApi;
-import JsonModel.OrderCreateRequestModel;
+import Model.Orders.Post.OrderCreateRequestModel;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;

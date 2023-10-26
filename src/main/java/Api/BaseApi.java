@@ -5,9 +5,8 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
-import static ConfigApp.ConfigApp.MAIN_URL;
+import static Config.ConfigApp.MAIN_URL;
 import static io.restassured.RestAssured.given;
 
 public class BaseApi

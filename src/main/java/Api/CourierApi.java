@@ -1,11 +1,11 @@
 package Api;
 
-import JsonModel.CourierCreateRequestModel;
-import JsonModel.CourierLogInRequestModel;
+import Model.Courier.Post.CourierCreateRequestModel;
+import Model.Courier.Post.CourierLogInRequestModel;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
-import static ConfigApp.ConfigApp.*;
+import static Config.ConfigApp.*;
 import static io.restassured.RestAssured.given;
 
 public class CourierApi extends BaseApi

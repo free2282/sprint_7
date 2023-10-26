@@ -1,7 +1,6 @@
 package Generator;
 
-import JsonModel.CourierCreateRequestModel;
-import JsonModel.OrderCreateRequestModel;
+import Model.Orders.Post.OrderCreateRequestModel;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

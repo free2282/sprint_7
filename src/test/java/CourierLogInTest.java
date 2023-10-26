@@ -1,6 +1,6 @@
 import Api.CourierApi;
-import JsonModel.CourierCreateRequestModel;
-import JsonModel.CourierLogInRequestModel;
+import Model.Courier.Post.CourierCreateRequestModel;
+import Model.Courier.Post.CourierLogInRequestModel;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;

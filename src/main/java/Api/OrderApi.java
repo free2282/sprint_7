@@ -1,10 +1,9 @@
 package Api;
-import JsonModel.OrderCreateRequestModel;
+import Model.Orders.Post.OrderCreateRequestModel;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
-import static ConfigApp.ConfigApp.MAIN_URL;
-import static ConfigApp.ConfigApp.ORDERS_URL;
+import static Config.ConfigApp.ORDERS_URL;
 
 public class OrderApi extends BaseApi
 {

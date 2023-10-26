@@ -1,7 +1,5 @@
 package Generator;
-import JsonModel.CourierCreateRequestModel;
-import JsonModel.CourierLogInRequestModel;
-import org.apache.commons.lang3.RandomStringUtils;
+import Model.Courier.Post.CourierCreateRequestModel;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
