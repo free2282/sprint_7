@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: CourierLogInTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 61.039 s <<< FAILURE! - in CourierLogInTest
+logInCourierNullPasswordExpected400Test(CourierLogInTest)  Time elapsed: 60.161 s  <<< FAILURE!
+java.lang.AssertionError: expected:<400> but was:<504>
+	at CourierLogInTest.logInCourierNullPasswordExpected400Test(CourierLogInTest.java:62)
+

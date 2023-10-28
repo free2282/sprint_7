@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6be8ca81-ac61-4d54-a2b2-e3d585b6c8d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/BaseApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/CourierApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/CourierApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Api/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/ConfigApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Generator/CourierGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generator/CourierGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Generator/OrderGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generator/OrderGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Courier/Post/CourierCreateRequestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/courier/CourierCreateRequestModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Courier/Post/CourierLogInRequestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/courier/CourierLogInRequestModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Orders/Get/AvailableStationsResponce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/orders/get/AvailableStationsResponce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Orders/Get/GetOrdersResponseApiModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/orders/get/GetOrdersResponseApiModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Orders/Get/OrdersResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/orders/get/OrdersResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Orders/Get/PageInfoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/orders/get/PageInfoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Orders/Post/OrderCreateRequestModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/orders/post/OrderCreateRequestModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierCreateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierCreateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierLogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierLogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/05f5099e-b216-478b-a284-d83d77ffc994-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/30b6359a-1e62-4704-8067-52cbfd821bde-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/47c30965-72e2-422a-bf0f-119e1af12361-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4d71e2b5-7dc2-465a-97c3-9de4868bd396-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7512387f-ed90-4423-95d5-70b4b15e79c0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/86032f39-e264-464b-810b-e00ca80a3bbf-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8bd91e4f-c784-4554-bb5f-0187f4d2581a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/91ce15a2-4421-4818-9e44-c7a6f7d4add8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/92a24f3a-ad2c-4198-8fa5-61f0d3062b7e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9aba0c29-e2c3-4d89-989f-2a7e1a061ece-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/aa462ade-2ea2-493e-af59-cc6ff474ad46-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c8eab079-6392-416e-a47e-4dc66646b088-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ddc6df33-cb71-47d5-b2a2-119a4fb6d8bf-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ea5ae5d3-eaa6-4447-ad6f-5435071784aa-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ef9d1ead-d8b9-4fa6-a143-0ad6ca775d83-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f8b158b5-7ffd-4c2f-85de-48bb21c40849-result.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XJSMcRYQw8jGTmZgUsvPa5leWx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "W:/МИИГАиК/temp/sprint__7/sprint_7"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+      <command value="mvn allure:serve " />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="All in untitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in untitled" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6be8ca81-ac61-4d54-a2b2-e3d585b6c8d4" name="Changes" comment="" />
+      <created>1698345651656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698345651656</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,11 +1,11 @@
-import Model.Courier.Post.CourierCreateRequestModel;
+import model.courier.CourierCreateRequestModel;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
 import io.restassured.response.Response;
 
-import static Generator.CourierGenerator.*;
+import static generator.CourierGenerator.*;
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -13,7 +13,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import Api.CourierApi;
+import api.CourierApi;
 public class CourierCreateTest
 {
     private CourierCreateRequestModel courierCreateRequestModel;

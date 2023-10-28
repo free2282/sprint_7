@@ -1,5 +1,5 @@
-import Api.OrderApi;
-import Model.Orders.Post.OrderCreateRequestModel;
+import api.OrderApi;
+import model.orders.post.OrderCreateRequestModel;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import static Generator.OrderGenerator.getRandomCourierCreateWithFirstName;
+import static generator.OrderGenerator.getRandomCourierCreateWithFirstName;
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.hamcrest.CoreMatchers.notNullValue;

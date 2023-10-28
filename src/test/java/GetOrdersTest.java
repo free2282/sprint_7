@@ -1,5 +1,5 @@
-import Api.OrderApi;
-import Model.Orders.Get.GetOrdersResponseApiModel;
+import api.OrderApi;
+import model.orders.get.GetOrdersResponseApiModel;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;

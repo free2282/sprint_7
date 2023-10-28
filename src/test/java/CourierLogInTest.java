@@ -1,13 +1,13 @@
-import Api.CourierApi;
-import Model.Courier.Post.CourierCreateRequestModel;
-import Model.Courier.Post.CourierLogInRequestModel;
+import api.CourierApi;
+import model.courier.CourierCreateRequestModel;
+import model.courier.CourierLogInRequestModel;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Before;
 import org.junit.Test;
 
-import static Generator.CourierGenerator.*;
+import static generator.CourierGenerator.*;
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.notNullValue;
